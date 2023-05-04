@@ -3,11 +3,11 @@ library(GenomicFeatures)
 library(GenomicRanges)
 
 # Read in the BED file
-bed_gr <- import("E:/Logan_Blair/Synteny_analysis/DN_synteny/final_dn_transcript_regions_sorted.bed", format = "bed")
-bed_gr <- import("E:/Logan_Blair/Synteny_analysis/UA_synteny/final_UA_transcript_regions_sorted.bed", format = "bed")
+bed_gr <- import("data/final_dn_transcript_regions_sorted.bed", format = "bed")
+bed_gr <- import("data/final_UA_transcript_regions_sorted.bed", format = "bed")
 
 # Read in the GFF file
-gtf <- import("E:/Logan_Blair/Synteny_analysis/DN_synteny/dmel-all-r6.41.gtf.gz", format = "gtf")
+gtf <- import("data/FlyRef/dmel-all-r6.41.gtf.gz", format = "gtf")
 
 # Make a TxDb object from the GFF file
 txdb <- makeTxDbFromGRanges(gtf)
