@@ -39,7 +39,8 @@ perl /home/juliecridland/scripts/get_ortholog_positions_for_synteny.pl sim Synte
 #### Make a fasta with a region around the candidates
 
 ```
-perl /home/ygeluo/scripts/synteny/get_region_X_around_candidates.pl Final_candidates_sorted 5000 /data/ygeluo/AG_Denovo/dmel-all-chromosome-r6.41.concat.fasta DN_plus5kb.fasta DN_all_positions```
+perl /home/ygeluo/scripts/synteny/get_region_X_around_candidates.pl Final_candidates_sorted 5000 /data/ygeluo/AG_Denovo/dmel-all-chromosome-r6.41.concat.fasta DN_plus5kb.fasta DN_all_positions
+```
 
 #### Blast the output to the outgroup genomes
 
